@@ -1,6 +1,6 @@
 package Projekt;
 
-
+//to sie wyswietli?
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
@@ -265,7 +265,7 @@ public class Archer1 extends JFrame
         	add(buttonStart); 	       	      	   
 	    }
 	    
-	    	 //napisze tu cos i chce wiedziec co sie stanies  	    
+	    	 //napisze tu cos i chce wiedziec co sie stanies  	 ffffff   
 	private class SliderChangeListener implements ChangeListener  //klasa implementacyjna suwaka
     {
 		@Override
