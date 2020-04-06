@@ -18,7 +18,7 @@ public class Archer1 extends JFrame
 	    private static final int SLIDER_MAX2 = 30;  
 	    private static final int SLIDER_INIT2 = 0;  
 
-	    private static final int radius = 100;
+	  //  private static final int radius = 100;
 	   
 	    static final double g = 9.80665; //stale przyspieszenie ziemiskie do obliczen
 	  	    
@@ -69,11 +69,11 @@ public class Archer1 extends JFrame
 	    
 	    public Archer1() throws HeadlessException 
 	    {
-	    	this.setSize(1250, 620);  //ustawiam rozmiar ramki
+	    	this.setSize(1200, 620);  //ustawiam rozmiar ramki
 	    	setTitle("Archer");		//ustawiam tytu³ ramki
 	    	this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 	        setLayout(null);
-	        this.setResizable(false);  //u¿ytkownik nie mo¿e zmieniæ rozmiaru ramki
+	       // this.setResizable(false);  //u¿ytkownik nie mo¿e zmieniæ rozmiaru ramki
 
 	      //Menu
 	        menuBar = new JMenuBar();   
@@ -137,7 +137,7 @@ public class Archer1 extends JFrame
 	        
 	        //panel z animacj¹
 	        animationPanel = new JPanel();
-	        animationPanel.setBounds(1, 1, 1250, 400); //ustawiam rozmiar panelu
+	        animationPanel.setBounds(1, 1, 1200, 400); //ustawiam rozmiar panelu
 	        animationPanel.setBackground(Color.white); //ustawiam kolor panelu
 	        add(animationPanel);
 	        this.add(animationPanel, BorderLayout.CENTER); //wykorzystanie BorderLayoutu
@@ -205,13 +205,13 @@ public class Archer1 extends JFrame
 	        add(comboboxMass);
 	     
 	        	labelAirResistance = new JLabel("Opór powietrza");	       
-	        	labelAirResistance.setBounds(425, 390, 120, 50);	
+	        	labelAirResistance.setBounds(420, 390, 100, 50);	
 		    add(labelAirResistance); 	 
 		    	textAirResistance = new JTextField("");  //pole tekstowe, w którym wyœwietlaæ siê bêdzie opór powietrza
-		    	textAirResistance.setBounds(425, 425, 120, 30);
+		    	textAirResistance.setBounds(420, 425, 100, 30);
 	       	add(textAirResistance);
 	       		buttonRandom = new JButton("Losuj");  //przycisk Losuj, który generuje liczbê z zakresu 1-100
-	       		buttonRandom.setBounds(425, 455, 120, 30);	
+	       		buttonRandom.setBounds(420, 455, 100, 30);	
 	        	buttonRandom.addActionListener(new ActionListener() 
 	        	{
 	        		@Override
@@ -225,28 +225,28 @@ public class Archer1 extends JFrame
 	        add(buttonRandom);
 	        
 	        	labelFlightTime = new JLabel("Czas lotu strza³y");	        
-	        	labelFlightTime.setBounds(570, 390, 200, 50);	
+	        	labelFlightTime.setBounds(550, 390, 200, 50);	
 	        add(labelFlightTime); 	        
 	        	textFlightTime = new JTextField(); //pole tekstowe, w którym wyœwietlaæ siê bêdzie Czas lotu strza³y (korzystamy ze wzorów ze specyfikacji)
-	        	textFlightTime.setBounds(570, 425, 150, 30);	
+	        	textFlightTime.setBounds(550, 425, 150, 30);	
 	        add(textFlightTime);
 	       
 	        	labelMaxHeight = new JLabel("Maksymalna wysokoœæ");	
-	        	labelMaxHeight.setBounds(740, 390, 200, 50);
+	        	labelMaxHeight.setBounds(720, 390, 200, 50);
 	        add(labelMaxHeight); 	       
 	        	textMaxHeight = new JTextField(); //pole tekstowe, w którym wyœwietlaæ siê bêdzie Maksymalna wysokoœæ (korzystamy ze wzorów ze specyfikacji)
-	        	textMaxHeight.setBounds(740, 425, 150, 30);
+	        	textMaxHeight.setBounds(720, 425, 150, 30);
 	        add(textMaxHeight);
 	        
 	     		labelRange = new JLabel("Zasiêg strza³y");
-	     		labelRange.setBounds(910, 390, 200, 50);
+	     		labelRange.setBounds(890, 390, 200, 50);
 	        add(labelRange); 
 	        	textRange = new JTextField();  //pole tekstowe, w którym wyœwietlaæ siê bêdzie Zasiêg strza³y (korzystamy ze wzorów ze specyfikacji)
-	        	textRange.setBounds(910, 425, 150, 30);
+	        	textRange.setBounds(890, 425, 150, 30);
 	        add(textRange);
 	        	      
 	        	buttonStart = new JButton("Start/Stop");  //przycisk, który pozwoli uruchomiæ i wstrzymaæ grê
-	        	buttonStart.setBounds(1080, 425, 150, 50);		
+	        	buttonStart.setBounds(1060, 425, 120, 50);		
         		buttonStart.addActionListener(new ActionListener() 
         		{
         			@Override
