@@ -1,4 +1,4 @@
 # archer
 project
 
-co sie tworzy?
+Symlacja rzutu ukośngo pod postacią lecącej strzały
